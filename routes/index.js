@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 import express from 'express';
 import AppController from '../controllers/AppController';
 // import UsersController from '../controllers/UsersController';
@@ -14,7 +15,8 @@ export default function Routes(app) {
     AppController.getStats(req, res);
   });
 
-  // router.post('/users', (req, res) => {
-  // UsersController.postNew(req, res);
-  // });
+  router.post('/users', (req, res) => {
+    // eslint-disable-next-line no-undef
+    UsersController.postNew(req, res);
+  });
 }

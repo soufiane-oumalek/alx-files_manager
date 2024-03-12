@@ -13,7 +13,6 @@ import mime from 'mime-types';
 import fs from 'fs';
 import Queue from 'bull';
 import redisClient from '../utils/redis';
-// eslint-disable-next-line import/extensions
 import dbClient from '../utils/db';
 
 const fileQueue = new Queue('fileQueue', {
